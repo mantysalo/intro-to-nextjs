@@ -1,0 +1,133 @@
+import { future, highlight } from '@mdx-deck/themes'
+export const theme = {...future }
+import staticGen from './static.png'
+import server from './server.png'
+import incremental from './incremental.png'
+import simplePage from './simple-page.png'
+import api from './api.png'
+
+<Header>
+
+Reaktor Sharing Show — Intro to Next.js
+
+</Header>
+
+
+# What is Next.js?
+
+ ~~"The React Framework for Production"~~
+
+:pill: "Create React App on steroids" :pill:
+
+---
+
+# What is Next.js?
+
+Key features:
+
+- File-system based routing
+- Hybrid static & server rendering
+- Incremental Static Generation
+- Smart bundling
+- Route pre-fetching
+
+---
+
+# Used by
+
+
+- TikTok
+- Twitch
+- Hulu
+- Nike
+- and some other small companies :slightly_smiling_face:
+
+
+---
+
+# File-system based routing
+
+<Steps>
+
+`my-next-project/pages/index.tsx ==> https://mywebsite.com`
+
+`my-next-project/pages/about.tsx ==> https://mywebsite.com/about`
+
+`my-next-project/pages/posts/[id].tsx ==> https://mywebsite.com/posts/:id`
+
+</Steps>
+
+---
+# Simple page
+
+<img src={simplePage}/>
+
+---
+
+# Hybrid static & server rendering
+
+- Build static pages when you can, render rest on server
+- Controlled by exporting a function named `getStaticProps` or `getServerSideProps` from within a _page_
+- Dynamic routes can also be statically generated, by exporting a function named `getStaticPaths`
+
+---
+
+<img src={staticGen}/>
+
+---
+
+<img src={incremental}/>
+
+---
+
+<img src={server}/>
+
+---
+
+# Other cool stuff
+
+<Steps>
+
+- Webpack, Babel and PostCSS configs are customizable without any hacks or "ejecting"
+- One button deployment with Vercel
+- You can run the server programmatically
+  - Add your own express middlewares and whatnot
+  - But you lose the one button deploy and automatic static optimization
+- Serverless function support
+
+</Steps>
+
+---
+
+# Serverless function support
+
+
+<img src={api} style={{width: '50%', height: '50%'}}/>
+
+`GET /api/user ==> {"name": "John Doe"}`
+
+---
+
+# How to get started?
+
+`npx create-next-app`
+
+`yarn create next-app`
+
+<a href="https://nextjs.org/docs/getting-started" style={{color: 'white'}}>https://nextjs.org/docs/getting-started</a>
+
+<a href="https://github.com/vercel/next.js" style={{color: 'white'}}>https://github.com/vercel/next.js</a>
+
+<a href="https://github.com/vercel/next.js/tree/canary/examples" style={{color: 'white'}}>https://github.com/vercel/next.js/tree/canary/examples</a>
+
+
+
+
+
+
+
+
+
+
+
+
