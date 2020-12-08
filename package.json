@@ -4,6 +4,6 @@
   },
   "devDependencies": {
     "@mdx-deck/themes": "4.0.0",
-    "mdx-deck": "^4.1.1"
+    "mdx-deck": "4.0.0"
   }
 }
